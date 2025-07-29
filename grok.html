@@ -104,12 +104,11 @@
         <!-- Action Buttons -->
         <div class="mt-3 d-flex justify-content-between">
           <button class="btn btn-secondary action-btn" id="reset-btn">Reset</button>
-          <button class="btn btn-primary action-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Generate QRIS Modal">Generate QRIS</button>
+          <button type="button" class="btn btn-primary action-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Generate QRIS">Generate QRIS</button>
         </div>
-        <!-- QR Code Output -->
-        <div id="qrcode" class="mt-3 text-center"></div>
-        <!-- Launch Demo Modal Button -->
-        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Launch Demo Modal Window">Launch Demo Modal</button>
+        <!-- QR Code Output (dikosongkan karena dipindah ke modal) -->
+        <div id="qrcode" class="mt-3 text-center" style="display: none"></div>
+        <!-- Launch Demo Modal Button (dihapus karena digantikan oleh Generate QRIS) -->
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
