@@ -63,10 +63,10 @@
   .sidebar {
     display: none;
   }
-  .content {
-    /* margin-left: 0; */
-    /* padding-left: 0; */
-  }
+  /* .content { */
+  /* margin-left: 0; */
+  /* padding-left: 0; */
+  /* } */
   .mobile-toggle {
     display: block;
     position: fixed;
