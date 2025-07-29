@@ -1,5 +1,5 @@
 .sidebar {
-  width: 50px;
+  width: 80px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -7,6 +7,7 @@
   background-color: #f8f9fa;
   transition: width 0.3s;
   overflow: hidden;
+  z-index: 1000;
 }
 .sidebar .nav-link {
   color: #333;
@@ -35,6 +36,7 @@
   display: none;
 }
 .offcanvas .nav-link {
+  color: #333;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -53,14 +55,50 @@
   margin-right: 15px;
 }
 .content {
-  margin-left: 50px;
-  padding: 10px;
-  min-height: 100vh;
-  /* justify-content: center; */
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-left: 80px;
+  padding: 20px;
+  background-color: #fff;
 }
-.selected {
-  background-color: #9fa1ba;
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .mobile-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+  }
+}
+@media (min-width: 577px) {
+  .mobile-toggle {
+    display: none;
+  }
+}
+.transaction-container {
+  max-width: 600px;
+  width: 100%;
+}
+.dialpad {
+  width: 100%;
+}
+.dial-btn {
+  aspect-ratio: 1 / 1; /* Membuat tombol persegi */
+  font-size: calc(2vw + 1rem); /* Responsif terhadap ukuran browser */
+  border-radius: 10px; /* Sedikit rounded */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: calc(10vw + 40px); /* Responsif, minimum 40px */
+}
+.action-btn {
+  width: 48%;
+  font-size: calc(1.5vw + 0.9rem);
+  border-radius: 10px;
 }
