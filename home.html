@@ -142,7 +142,24 @@
           <button class="btn btn-primary action-btn" id="generate-qris-btn">Generate QRIS</button>
         </div>
         <!-- QR Code Output -->
+
         <div id="qrcode" class="mt-3 text-center"></div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <img src="assets/img/logoQRIS.png" class="w-50 mx-auto pt-3" alt="" />
+            <div class="modal-body">
+              <img src="assets/img/QRIS.png" alt="" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Refresh</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
